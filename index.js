@@ -63,7 +63,6 @@ const mdLinks = (pathArgv, options) => {
         arrayDePromesas.push(fetch(links));
       });
       console.log(arrayDePromesas);
-      //console.log(arrayDePromesas);
       //console.log("hola");
     } else {
       console.log(links);
@@ -80,30 +79,6 @@ const mdLinks = (pathArgv, options) => {
     //console.log("El archivo NO es un MD");
     console.log("No lo puedo leer, no es archivo MD");
   }
-
-  /*
-const validateLinks = (ruta) => {
-  const allLinks = links(ruta);
-  const estatusLinks = allLinks.map((link) => fetch(link.href));
-  .then((res) => ({
-    href: link.href,
-    text: link.text,
-    path: link.path,
-    status: res.status,
-    statusText: res.statusText,
-  }));
-  console.log(estatusLinks)
-
-};
-*/
-  /*
-const validateOption = (links) => {
-  let stringValidate = "";
-  links.forEach((link) => {
-    stringValidate += `${link.path} ${link.href} ${link.statusText} ${link.status} ${link.text}\n`;
-  });
-  console.log(stringValidate);
-  */
 };
 
 mdLinks();
