@@ -1,4 +1,4 @@
-![md-links](imgReadme/md-imag.png)
+![md-links](/imgReadme/md-imag.png)
 
 # Markdown Links
 
@@ -32,12 +32,12 @@ El proyecto implica la creación de una biblioteca de JavaScript personalizada.
 El proyecto se desarrolló en 4 sprints, y la planificación y seguimiento se realizó utilizando la
 herramienta trello, como se muestra a continuación:
 
-![Trello](imgReadme/trello1.jpeg)
-![Trello](imgReadme/trello2.jpeg)
+![Trello](/imgReadme/trello1.jpeg)
+![Trello](/imgReadme/trello2.jpeg)
 
 ## 3. Diagrama de flujo
 
-![Diagra-de-flujo](imgReadme/diagramaDeFlujo.png)
+![Diagra-de-flujo](/imgReadme/diagramaDeFlujo.png)
 
 ## 4. Guía de uso e instalación de la biblioteca
 
@@ -54,7 +54,7 @@ considere necesarios.
 
 ## 5. Archivos del proyecto
 
-![Boilerplate](imgReadme/boilerplate.jpeg)
+![Boilerplate](/imgReadme/boilerplate.jpeg)
 
 - `README.md` con descripción del módulo, instrucciones de instalación/uso,
   documentación del API y ejemplos.
@@ -115,7 +115,7 @@ Con `validate:false` :
 - `text`: Texto que aparecía dentro del link (`<a>`).
 - `file`: Ruta del archivo donde se encontró el link.
 
-![Validate-false](imgReadme/sin-options.jpeg)
+![Validate-false](/imgReadme/sin-options.jpeg)
 
 Con `validate:true` :
 
@@ -125,7 +125,7 @@ Con `validate:true` :
 - `status`: Código de respuesta HTTP.
 - `ok`: Mensaje `fail` en caso de fallo u `ok` en caso de éxito.
 
-![Validate-true](imgReadme/con-validate.jpeg)
+![Validate-true](/imgReadme/con-validate.jpeg)
 
 #### Options
 
@@ -135,21 +135,21 @@ Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP par
 averiguar si el link funciona o no. Si el link resulta en una redirección a una
 URL que responde ok, entonces consideraremos el link como ok.
 
-![Validate](imgReadme/con-validate.jpeg)
+![Validate](/imgReadme/con-validate.jpeg)
 
 ##### `--stats`
 
 Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
 básicas sobre los links.
 
-![Stats](imgReadme/con-stats.jpeg)
+![Stats](/imgReadme/con-stats.jpeg)
 
 ##### `--validate y --stats`
 
 También podemos combinar `--stats` y `--validate` para obtener estadísticas que
 necesiten de los resultados de la validación.
 
-![Validate-Stats](imgReadme/con-validate-stats.jpeg)
+![Validate-Stats](/imgReadme/con-validate-stats.jpeg)
 
 ## 7. Trabajo en equipo
 
