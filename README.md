@@ -73,21 +73,21 @@ considere necesarios.
 - `test/md-links.spec.js` debe contener los tests unitarios para la función
   `mdLinks()`. Su implementación debe pasar estos tests.
 
-  ## 6. Documentación técnica de la biblioteca
+## 6. Documentación técnica de la biblioteca
 
-  Markdown es un lenguaje de marcado ligero muy popular entre los desarrolladores.
-  Se usa mucho en varias plataformas que manejan texto sin formato (como GitHub, foros,
-  blogs, etc.), y es muy común encontrar varios archivos en este formato en cualquier
-  repositorio, comenzando con el tradicional README.md.
+Markdown es un lenguaje de marcado ligero muy popular entre los desarrolladores.
+Se usa mucho en varias plataformas que manejan texto sin formato (como GitHub, foros,
+blogs, etc.), y es muy común encontrar varios archivos en este formato en cualquier
+repositorio, comenzando con el tradicional README.md.
 
-  Estos archivos de Markdown normalmente contienen links que muchas veces están rotos
-  o no son válidos y eso perfudica mucho el valor de la información que se quiere compartir.
+Estos archivos de Markdown normalmente contienen links que muchas veces están rotos
+o no son válidos y eso perfudica mucho el valor de la información que se quiere compartir.
 
-  El objetivo de esta herramienta de línea de comandos (CLI) es verificar archivos .md y verificar si contienen enlaces mientras indica si estos enlaces son válidos o no.
+El objetivo de esta herramienta de línea de comandos (CLI) es verificar archivos .md y verificar si contienen enlaces mientras indica si estos enlaces son válidos o no.
 
 ## Este proyecto consta de DOS partes
 
-### 1( JavaScript API
+##### JavaScript API
 
 El módulo debe poder **importarse** en otros scripts de Node.js y debe ofrecer la
 siguiente interfaz:
@@ -155,7 +155,7 @@ necesiten de los resultados de la validación.
 
 Crsilda Huayra - Front End Developer
 
-## 9. Checklist
+## 8. Checklist
 
 ### General
 
