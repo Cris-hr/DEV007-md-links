@@ -18,11 +18,12 @@ const fs = require("fs");
 const path = require("path");
 //const parseMd = require("parse-md");
 
-const mdLinks = (pathArgv, options) => {
+const mdLinks = () => {
   const relativePath = process.argv[2];
   const validateOption =
     process.argv.includes("--validate") || process.argv.includes("--v");
-  //const statsOption = process.argv.includes("--stats");
+  const statsOption =
+    process.argv.includes("--stats") || process.argv.includes("--s");
 
   let userPath;
   //verificamos si la ruta existe o no
@@ -58,17 +59,19 @@ const mdLinks = (pathArgv, options) => {
       };
       links.push(objet);
     }
-    if (validateOption) {
+    let cuentaRotos = 0;
+    const validarLinks = async () => {
       //Aquí va la validación
       let arrayDePromesas = [];
       links.forEach((links) => {
         arrayDePromesas.push(fetch(links.href));
         //console.log(arrayDePromesas);
       });
-      return Promise.all(arrayDePromesas)
+      await Promise.all(arrayDePromesas)
         .then((responses) => {
           const results = responses.map((response, index) => {
             const link = links[index];
+            if (!response.ok) cuentaRotos += 1;
             return {
               href: link.href,
               text: link.text,
@@ -83,12 +86,40 @@ const mdLinks = (pathArgv, options) => {
           console.error("Error al realizar las peticiones HTTP:", error);
           return [];
         });
+    };
+
+    const stastLinks = () => {
+      const arrayDelinks = links.map((obj) => {
+        return obj.href;
+      });
+      if (validateOption) {
+        console.log(
+          "\n",
+          "Total:" + arrayDelinks.length,
+          "\n",
+          "Unicos: " + new Set(arrayDelinks).size,
+          "\n",
+          "Rotos: " + cuentaRotos
+        );
+      } else {
+        console.log(
+          "\n",
+          "Total:" + arrayDelinks.length,
+          "\n",
+          "Unicos: " + new Set(arrayDelinks).size
+        );
+      }
+    };
+    if (validateOption && !statsOption) {
+      validarLinks();
+    } else if (statsOption) {
+      validarLinks().then(() => stastLinks());
     } else {
       console.log(links);
     }
   } else {
-    //console.log("El archivo NO es un MD");
-    console.log("No lo puedo leer, no es archivo MD");
+    console.log("El archivo NO es un MD");
+    //console.log("No lo puedo leer, no es archivo MD");
   }
 };
 
