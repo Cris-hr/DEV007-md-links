@@ -1,7 +1,7 @@
 {
   "name": "cris-ch-md-links",
   "author": "cris hr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "herramienta de línea de comando (CLI) así como tu propia librería (o biblioteca - library) en JavaScript.",
   "main": "index.js",
   "engines": {
