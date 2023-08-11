@@ -41,16 +41,27 @@ herramienta trello, como se muestra a continuación:
 
 ## 4. Guía de uso e instalación de la biblioteca
 
-Para comenzar este proyecto tendrás que hacer un **_fork_** y **_clonar_** este
-repositorio.
+##### `Instalación`
 
-Antes de comenzar a codear, es necesario crear un **plan de acción**. Esto debería
-quedar detallado en el `README.md` de tu repo y en una serie de **_issues_**
-y **_milestones_** para priorizar y organizar el trabajo, y para poder hacer
-seguimiento de tu progreso.
+Para instalar la biblioteca, siga estos pasos:
 
-Dentro de cada **_milestone_** se crearán y asignarán los **_issues_** que cada quien
-considere necesarios.
+1. Abre la terminal de tu sistema operativo.
+
+2. Navegue hasta el directorio raíz de su proyecto o la ubicación donde desea instalar la biblioteca.
+
+3. Ejecute el siguiente comando en la terminal para instalar la biblioteca desde el registro del paquete npm:
+
+npm i <cris-ch-md-links>
+
+Una vez completada la instalación, puede importar y usar la biblioteca en su proyecto de acuerdo con las instrucciones de uso proporcionadas en la guía de uso.
+
+Siguiendo estos pasos, habrá instalado la biblioteca en su proyecto y podrá comenzar a usarla para realizar las tareas deseadas.
+
+Instrucciones de uso:
+
+El ejecutable de la herramienta se utiliza de la siguiente manera a través de la terminal:
+
+mdLinks <path-to-file> [options]
 
 ## 5. Archivos del proyecto
 
@@ -98,7 +109,7 @@ siguiente interfaz:
 
 - `path`: Ruta **absoluta** o **relativa** al **archivo** o **directorio**.
   Si la ruta pasada es relativa, debe resolverse como relativa al directorio
-  desde donde se invoca node - _current working directory_).
+  desde donde se invoca node - _current working directory_.
 - `options`: Un objeto con **únicamente** la siguiente propiedad:
   - `validate`: Booleano que determina si se desea validar los links
     encontrados.
