@@ -32,12 +32,12 @@ El proyecto implica la creación de una biblioteca de JavaScript personalizada.
 El proyecto se desarrolló en 4 sprints, y la planificación y seguimiento se realizó utilizando la
 herramienta trello, como se muestra a continuación:
 
-![Trello](/imgReadme/trello1.jpeg)
-![Trello](/imgReadme/trello2.jpeg)
+![Trello](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/trello1.jpeg)
+![Trello](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/trello2.jpeg)
 
 ## 3. Diagrama de flujo
 
-![Diagra-de-flujo](/imgReadme/diagramaDeFlujo.png)
+![Diagra-de-flujo](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/diagramaDeFlujo.png)
 
 ## 4. Guía de uso e instalación de la biblioteca
 
@@ -51,7 +51,7 @@ Para instalar la biblioteca, siga estos pasos:
 
 3. Ejecute el siguiente comando en la terminal para instalar la biblioteca desde el registro del paquete npm:
 
-npm i <cris-ch-md-links>
+npm i cris-ch-md-links
 
 Una vez completada la instalación, puede importar y usar la biblioteca en su proyecto de acuerdo con las instrucciones de uso proporcionadas en la guía de uso.
 
@@ -65,7 +65,7 @@ mdLinks <path-to-file> [options]
 
 ## 5. Archivos del proyecto
 
-![Boilerplate](/imgReadme/boilerplate.jpeg)
+![Boilerplate](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/boilerplate.jpeg)
 
 - `README.md` con descripción del módulo, instrucciones de instalación/uso,
   documentación del API y ejemplos.
@@ -126,7 +126,7 @@ Con `validate:false` :
 - `text`: Texto que aparecía dentro del link (`<a>`).
 - `file`: Ruta del archivo donde se encontró el link.
 
-![Validate-false](/imgReadme/sin-options.jpeg)
+![Validate-false](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/sin-options.jpeg)
 
 Con `validate:true` :
 
@@ -136,7 +136,7 @@ Con `validate:true` :
 - `status`: Código de respuesta HTTP.
 - `ok`: Mensaje `fail` en caso de fallo u `ok` en caso de éxito.
 
-![Validate-true](/imgReadme/con-validate.jpeg)
+![Validate-true](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/con-validate.jpeg)
 
 #### Options
 
@@ -146,21 +146,21 @@ Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP par
 averiguar si el link funciona o no. Si el link resulta en una redirección a una
 URL que responde ok, entonces consideraremos el link como ok.
 
-![Validate](/imgReadme/con-validate.jpeg)
+![Validate](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/con-validate.jpeg)
 
 ##### `--stats`
 
 Si pasamos la opción `--stats` el output (salida) será un texto con estadísticas
 básicas sobre los links.
 
-![Stats](/imgReadme/con-stats.jpeg)
+![Stats](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/con-stats.jpeg)
 
 ##### `--validate y --stats`
 
 También podemos combinar `--stats` y `--validate` para obtener estadísticas que
 necesiten de los resultados de la validación.
 
-![Validate-Stats](/imgReadme/con-validate-stats.jpeg)
+![Validate-Stats](https://github.com/Cris-hr/DEV007-md-links/blob/main/imgReadme/con-validate-stats.jpeg)
 
 ## 7. Trabajo en equipo
 
