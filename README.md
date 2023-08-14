@@ -61,7 +61,7 @@ Instrucciones de uso:
 
 El ejecutable de la herramienta se utiliza de la siguiente manera a través de la terminal:
 
-mdLinks <path-to-file> [options]
+mdLinks path-to-file [options]
 
 ## 5. Archivos del proyecto
 
